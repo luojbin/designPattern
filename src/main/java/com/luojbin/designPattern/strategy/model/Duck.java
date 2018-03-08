@@ -7,7 +7,7 @@ public abstract class Duck {
 	FlyBehavior flyBehavior;
 	QuackBehavior quackBehavior;
 
-	Duck() {
+	public Duck() {
 	}
 
 	public void performFly(){
