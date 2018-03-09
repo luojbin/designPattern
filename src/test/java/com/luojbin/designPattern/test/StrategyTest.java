@@ -1,11 +1,11 @@
 package com.luojbin.designPattern.test;
 
-import com.luojbin.designPattern.strategy.fly.FlyWithRocket;
-import com.luojbin.designPattern.strategy.model.Duck;
-import com.luojbin.designPattern.strategy.model.FakeDuck;
-import com.luojbin.designPattern.strategy.model.SuperDuck;
-import com.luojbin.designPattern.strategy.model.YellowDuck;
-import com.luojbin.designPattern.strategy.quack.MuteQuack;
+import com.luojbin.designPattern.p1_strategy.fly.FlyWithRocket;
+import com.luojbin.designPattern.p1_strategy.model.Duck;
+import com.luojbin.designPattern.p1_strategy.model.FakeDuck;
+import com.luojbin.designPattern.p1_strategy.model.SuperDuck;
+import com.luojbin.designPattern.p1_strategy.model.YellowDuck;
+import com.luojbin.designPattern.p1_strategy.quack.MuteQuack;
 
 public class StrategyTest {
 	public static void main(String[] args) {

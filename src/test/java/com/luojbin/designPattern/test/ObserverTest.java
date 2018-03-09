@@ -1,10 +1,10 @@
 package com.luojbin.designPattern.test;
 
-import com.luojbin.designPattern.observer.displayElement.CurrentConditionDisplay;
-import com.luojbin.designPattern.observer.displayElement.DisplayElement;
-import com.luojbin.designPattern.observer.displayElement.ForecastDisplay;
-import com.luojbin.designPattern.observer.displayElement.StatisticsDisplay;
-import com.luojbin.designPattern.observer.subject.WeatherData;
+import com.luojbin.designPattern.p2_observer.displayElement.CurrentConditionDisplay;
+import com.luojbin.designPattern.p2_observer.displayElement.DisplayElement;
+import com.luojbin.designPattern.p2_observer.displayElement.ForecastDisplay;
+import com.luojbin.designPattern.p2_observer.displayElement.StatisticsDisplay;
+import com.luojbin.designPattern.p2_observer.subject.WeatherData;
 
 public class ObserverTest {
     public static void main(String[] args){

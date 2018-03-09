@@ -1,9 +1,9 @@
 package com.luojbin.designPattern.test;
 
-import com.luojbin.designPattern.decorator.coffee.Beverage;
-import com.luojbin.designPattern.decorator.coffee.Decaf;
-import com.luojbin.designPattern.decorator.condiment.Milk;
-import com.luojbin.designPattern.decorator.condiment.Peanut;
+import com.luojbin.designPattern.p3_decorator.coffee.Beverage;
+import com.luojbin.designPattern.p3_decorator.coffee.Decaf;
+import com.luojbin.designPattern.p3_decorator.condiment.Milk;
+import com.luojbin.designPattern.p3_decorator.condiment.Peanut;
 
 public class DecoratorTest {
     public static void main(String[] args){

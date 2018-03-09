@@ -1,8 +1,8 @@
 package com.luojbin.designPattern.test;
 
-import com.luojbin.designPattern.decorator2.function.Game;
-import com.luojbin.designPattern.decorator2.function.MagicRing;
-import com.luojbin.designPattern.decorator2.phone.Phone;
+import com.luojbin.designPattern.p3_decorator2.function.Game;
+import com.luojbin.designPattern.p3_decorator2.function.MagicRing;
+import com.luojbin.designPattern.p3_decorator2.phone.Phone;
 
 public class Decorator2Test {
 

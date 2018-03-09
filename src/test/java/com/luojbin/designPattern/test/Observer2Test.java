@@ -1,9 +1,9 @@
 package com.luojbin.designPattern.test;
 
-import com.luojbin.designPattern.observer2.displayElement.CurrentConditionDisplay2;
-import com.luojbin.designPattern.observer2.displayElement.ForecastDisplay2;
-import com.luojbin.designPattern.observer2.displayElement.StatisticsDisplay2;
-import com.luojbin.designPattern.observer2.subject.WeatherData2;
+import com.luojbin.designPattern.p2_observer2.displayElement.CurrentConditionDisplay2;
+import com.luojbin.designPattern.p2_observer2.displayElement.ForecastDisplay2;
+import com.luojbin.designPattern.p2_observer2.displayElement.StatisticsDisplay2;
+import com.luojbin.designPattern.p2_observer2.subject.WeatherData2;
 
 import java.util.Observer;
 

@@ -1,9 +1,9 @@
 package com.luojbin.designPattern.test;
 
-import com.luojbin.designPattern.strategy2.hero.Archor;
-import com.luojbin.designPattern.strategy2.hero.Hero;
-import com.luojbin.designPattern.strategy2.hero.Knight;
-import com.luojbin.designPattern.strategy2.hero.Shaman;
+import com.luojbin.designPattern.p1_strategy2.hero.Archor;
+import com.luojbin.designPattern.p1_strategy2.hero.Hero;
+import com.luojbin.designPattern.p1_strategy2.hero.Knight;
+import com.luojbin.designPattern.p1_strategy2.hero.Shaman;
 
 public class Strategy2Test {
 	public static void main(String[] args) {
