@@ -18,5 +18,7 @@ public class ObserverTest {
         weatherData.setMeasurements(80,60,30.3f);
         weatherData.setMeasurements(60,70,30.5f);
         weatherData.setMeasurements(84,52,31.3f);
+
+        
     }
 }
