@@ -1,4 +1,4 @@
-package com.luojbin.designPattern.p4_factory_simple.pizza;
+package com.luojbin.designPattern.p4_factory.pizza;
 
 public class ChicagoPizza extends Pizza {
     @Override
