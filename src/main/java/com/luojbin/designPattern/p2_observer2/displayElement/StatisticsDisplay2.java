@@ -12,8 +12,10 @@ public class StatisticsDisplay2 implements DisplayElement, Observer {
     private Observable weatherData;
 
     public StatisticsDisplay2(Observable weatherData){
+        //<editor-fold desc="测试idea自定义折叠代码块">
         this.weatherData = weatherData;
         weatherData.addObserver(this);
+        //</editor-fold>
     }
 
 

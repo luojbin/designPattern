@@ -4,7 +4,7 @@ import com.luojbin.designPattern.p4_factory.building.PizzaStore;
 import com.luojbin.designPattern.p4_factory.building.SimplePizzaFactory;
 import com.luojbin.designPattern.p4_factory.pizza.Pizza;
 
-public class FactoryTest {
+class FactoryTest {
     public static void main(String[] args){
         PizzaStore pizzaHut = new PizzaStore(new SimplePizzaFactory());
         Pizza pizza = pizzaHut.orderPizza("Cheese");

@@ -7,7 +7,7 @@ import com.luojbin.designPattern.p1_strategy.model.SuperDuck;
 import com.luojbin.designPattern.p1_strategy.model.YellowDuck;
 import com.luojbin.designPattern.p1_strategy.quack.MuteQuack;
 
-public class StrategyTest {
+class StrategyTest {
 	public static void main(String[] args) {
 		Duck yellow = new YellowDuck();
 		yellow.performFly();

@@ -1,7 +1,7 @@
 package com.luojbin.designPattern.p3_decorator.coffee;
 
 public abstract class Beverage {
-    protected String description = "未知饮料";
+    String description = "未知饮料";
 
     public String getDescription(){
         return this.description;

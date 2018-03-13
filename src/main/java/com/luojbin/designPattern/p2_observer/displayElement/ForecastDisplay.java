@@ -18,8 +18,9 @@ public class ForecastDisplay implements DisplayElement, Observer{
         System.out.println("这里是天气预报，今天是个好日子");
     }
 
+    // LUOJBIN 这是我的todo任务
     @Override
-    public void update(float temp, float humidity, float pressure) {
+    public void update(float temperature, float humidity, float pressure) {
         this.temperature = temperature;
         this.humidity = humidity;
         display();

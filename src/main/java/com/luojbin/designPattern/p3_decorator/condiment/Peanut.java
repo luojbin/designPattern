@@ -3,7 +3,7 @@ package com.luojbin.designPattern.p3_decorator.condiment;
 import com.luojbin.designPattern.p3_decorator.coffee.Beverage;
 
 public class Peanut extends Condiment {
-    Beverage beverage;
+    private Beverage beverage;
 
     public Peanut(Beverage beverage){
         this.beverage = beverage;

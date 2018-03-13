@@ -3,7 +3,7 @@ package com.luojbin.designPattern.p4_factory.building;
 import com.luojbin.designPattern.p4_factory.pizza.Pizza;
 
 public class PizzaStore {
-    SimplePizzaFactory pizzaFactory;
+    private SimplePizzaFactory pizzaFactory;
 
     public PizzaStore(SimplePizzaFactory pizzaFactory){
         this.pizzaFactory = pizzaFactory;

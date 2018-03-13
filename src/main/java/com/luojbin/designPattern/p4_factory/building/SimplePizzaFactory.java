@@ -9,12 +9,16 @@ public class SimplePizzaFactory {
     public Pizza createPizza(String type){
         Pizza pizza = null;
 
-        if(type.equals("Cheese")){
-            pizza = new CheesePizza();
-        }else if(type.equals("NewYork")){
-            pizza = new NewYorkPizza();
-        }else if(type.equals("Chicago")){
-            pizza = new ChicagoPizza();
+        switch (type) {
+            case "Cheese":
+                pizza = new CheesePizza();
+                break;
+            case "NewYork":
+                pizza = new NewYorkPizza();
+                break;
+            case "Chicago":
+                pizza = new ChicagoPizza();
+                break;
         }
 
 

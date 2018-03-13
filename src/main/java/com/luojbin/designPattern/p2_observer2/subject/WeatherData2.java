@@ -9,7 +9,7 @@ public class WeatherData2 extends Observable {
 
     public WeatherData2(){}
 
-    public void measurementsChanged(){
+    private void measurementsChanged(){
         setChanged();
         notifyObservers();
     }

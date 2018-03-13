@@ -4,7 +4,7 @@ import com.luojbin.designPattern.p3_decorator2.function.Game;
 import com.luojbin.designPattern.p3_decorator2.function.MagicRing;
 import com.luojbin.designPattern.p3_decorator2.phone.Phone;
 
-public class Decorator2Test {
+class Decorator2Test {
 
     public static void main(String[] args){
         Phone phone = new Phone();
@@ -19,6 +19,8 @@ public class Decorator2Test {
 
         Phone game = new Game(magicRing);
         game.ring();
+
+        System.out.println();
 
     }
 }

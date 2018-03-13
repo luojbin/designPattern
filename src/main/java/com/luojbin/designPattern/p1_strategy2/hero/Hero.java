@@ -8,7 +8,7 @@ public class Hero {
 	Weapon weapon;
 	
 	// 创建英雄
-	public Hero(){
+    Hero(){
 	}
 	
 	// 发动攻击

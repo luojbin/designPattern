@@ -6,7 +6,7 @@ import com.luojbin.designPattern.p2_observer.displayElement.ForecastDisplay;
 import com.luojbin.designPattern.p2_observer.displayElement.StatisticsDisplay;
 import com.luojbin.designPattern.p2_observer.subject.WeatherData;
 
-public class ObserverTest {
+class ObserverTest {
     public static void main(String[] args){
         WeatherData weatherData = new WeatherData();
 

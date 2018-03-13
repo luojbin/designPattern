@@ -10,5 +10,10 @@ public class CGstylePepperPizza extends Pizza2 {
         dough = "厚面团";
         sauce = "胡椒粉";
         toppings.add("胡椒 胡椒 胡椒");
+
+
     }
+
+
+
 }

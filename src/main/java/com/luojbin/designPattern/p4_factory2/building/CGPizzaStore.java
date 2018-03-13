@@ -10,16 +10,17 @@ public class CGPizzaStore extends PizzaStore2 {
 
     @Override
     Pizza2 createPizza(String type) {
-        if (type.equals("cheese")) {
-            return new CGstyleCheesePizza();
-        } else if (type.equals("seafood")) {
-            return new CGstyleSeafoodPizza();
-        } else if (type.equals("potato")) {
-            return new CGstylePotatoPizza();
-        } else if (type.equals("pepper")) {
-            return new CGstylePepperPizza();
-        } else {
-            return new CGstyleCheesePizza();
+        switch (type) {
+            case "cheese":
+                return new CGstyleCheesePizza();
+            case "seafood":
+                return new CGstyleSeafoodPizza();
+            case "potato":
+                return new CGstylePotatoPizza();
+            case "pepper":
+                return new CGstylePepperPizza();
+            default:
+                return new CGstyleCheesePizza();
         }
 
     }

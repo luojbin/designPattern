@@ -7,7 +7,7 @@ import com.luojbin.designPattern.p2_observer2.subject.WeatherData2;
 
 import java.util.Observer;
 
-public class Observer2Test {
+class Observer2Test {
     public static void main(String[] args){
         WeatherData2 weatherData2 = new WeatherData2();
 

@@ -11,7 +11,7 @@ import com.luojbin.designPattern.p4_factory2.pizza.Pizza2;
  * 而这个方法在父类中是抽象的, 其具体实现放在子类中来完成, 由子类来决定到底创建什么样的对象<br/>
  * 工厂方法让类把实例化推迟到子类中
  */
-public class FactoryTest2 {
+class FactoryTest2 {
     public static void main(String[] args){
         PizzaStore2 pizzaHut = new NYPizzaStore();
         Pizza2 pizza = pizzaHut.orderPizza("cheese");
@@ -22,6 +22,9 @@ public class FactoryTest2 {
         Pizza2 pizza3 = pizzaChi.orderPizza("potato");
         System.out.println();
         Pizza2 pizza4 = pizzaChi.orderPizza("seafood");
+        System.out.println("daf");
+        System.out.println("dfaf");
+
     }
 
 }

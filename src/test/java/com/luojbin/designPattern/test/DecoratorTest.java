@@ -5,7 +5,7 @@ import com.luojbin.designPattern.p3_decorator.coffee.Decaf;
 import com.luojbin.designPattern.p3_decorator.condiment.Milk;
 import com.luojbin.designPattern.p3_decorator.condiment.Peanut;
 
-public class DecoratorTest {
+class DecoratorTest {
     public static void main(String[] args){
         Beverage decaf = new Decaf();
         Beverage milkDecaf = new Milk(decaf);
