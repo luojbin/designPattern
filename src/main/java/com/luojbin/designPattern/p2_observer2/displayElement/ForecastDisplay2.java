@@ -11,7 +11,7 @@ public class ForecastDisplay2 implements DisplayElement, Observer {
     private float humidity;
     private Observable weatherData;
 
-    public ForecastDisplay2(Observable weatherData){
+    public ForecastDisplay2(Observable weatherData) {
         this.weatherData = weatherData;
         weatherData.addObserver(this);
     }
@@ -22,7 +22,7 @@ public class ForecastDisplay2 implements DisplayElement, Observer {
 
     @Override
     public void update(Observable obs, Object arg) {
-        if(obs instanceof WeatherData2){
+        if (obs instanceof WeatherData2) {
             WeatherData2 weatherData2 = (WeatherData2) obs;
             display();
         }

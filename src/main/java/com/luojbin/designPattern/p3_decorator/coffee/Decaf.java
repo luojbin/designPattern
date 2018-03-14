@@ -1,12 +1,13 @@
 package com.luojbin.designPattern.p3_decorator.coffee;
 
-public class Decaf extends Beverage{
+public class Decaf extends Beverage {
 
-    public Decaf(){
+    public Decaf() {
         this.description = "这是一杯 decaf ";
     }
+
     @Override
-    public double cost(){
+    public double cost() {
         return 1;
     }
 }

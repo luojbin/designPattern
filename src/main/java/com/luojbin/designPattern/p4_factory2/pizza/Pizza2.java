@@ -12,7 +12,7 @@ public abstract class Pizza2 {
     String sauce;
     ArrayList toppings = new ArrayList();
 
-    public void prepare(){
+    public void prepare() {
         System.out.println("preparing " + name);
         System.out.println("tossing dough...");
         System.out.println("adding sauce...");
@@ -20,18 +20,21 @@ public abstract class Pizza2 {
         for (Object topping : toppings) {
             System.out.println("    " + topping);
         }
-    };
-    public void bake(){
-        System.out.println("bake for 25 mins");
-    };
-    public void cut(){
-        System.out.println("cut into 4 slices");
-    };
-    public void box(){
-        System.out.println("place pizza in box");
-    };
+    }
 
-    public String getName(){
+    public void bake() {
+        System.out.println("bake for 25 mins");
+    }
+
+    public void cut() {
+        System.out.println("cut into 4 slices");
+    }
+
+    public void box() {
+        System.out.println("place pizza in box");
+    }
+
+    public String getName() {
         return name;
     }
 }

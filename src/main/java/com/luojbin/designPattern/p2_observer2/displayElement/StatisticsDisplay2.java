@@ -11,7 +11,7 @@ public class StatisticsDisplay2 implements DisplayElement, Observer {
     private float humidity;
     private Observable weatherData;
 
-    public StatisticsDisplay2(Observable weatherData){
+    public StatisticsDisplay2(Observable weatherData) {
         //<editor-fold desc="测试idea自定义折叠代码块">
         this.weatherData = weatherData;
         weatherData.addObserver(this);
@@ -26,7 +26,7 @@ public class StatisticsDisplay2 implements DisplayElement, Observer {
 
     @Override
     public void update(Observable obs, Object arg) {
-        if(obs instanceof WeatherData2){
+        if (obs instanceof WeatherData2) {
             WeatherData2 weatherData2 = (WeatherData2) obs;
             display();
         }

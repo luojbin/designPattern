@@ -1,12 +1,13 @@
 package com.luojbin.designPattern.p3_decorator.coffee;
 
-public class HouseBlend extends Beverage{
+public class HouseBlend extends Beverage {
 
-    public HouseBlend(){
+    public HouseBlend() {
         this.description = "这是一杯 houseBlend ";
     }
+
     @Override
-    public double cost(){
+    public double cost() {
         return 2;
     }
 }

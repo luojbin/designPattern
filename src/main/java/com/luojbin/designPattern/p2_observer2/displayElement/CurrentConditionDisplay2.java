@@ -12,7 +12,7 @@ public class CurrentConditionDisplay2 implements DisplayElement, Observer {
     private float humidity;
     private Observable weatherData2;
 
-    public CurrentConditionDisplay2(Observable weatherData2){
+    public CurrentConditionDisplay2(Observable weatherData2) {
         this.weatherData2 = weatherData2;
         weatherData2.addObserver(this);
     }
@@ -24,7 +24,7 @@ public class CurrentConditionDisplay2 implements DisplayElement, Observer {
 
 
     public void update(Observable obs, Object arg) {
-        if(obs instanceof WeatherData2){
+        if (obs instanceof WeatherData2) {
             WeatherData2 weatherData2 = (WeatherData2) obs;
             this.temperature = weatherData2.getTemperature();
             this.humidity = weatherData2.getHumidity();

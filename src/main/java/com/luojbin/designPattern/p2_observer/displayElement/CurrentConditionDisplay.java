@@ -3,12 +3,12 @@ package com.luojbin.designPattern.p2_observer.displayElement;
 import com.luojbin.designPattern.p2_observer.observer.Observer;
 import com.luojbin.designPattern.p2_observer.subject.Subject;
 
-public class CurrentConditionDisplay implements DisplayElement, Observer{
+public class CurrentConditionDisplay implements DisplayElement, Observer {
     private float temperature;
     private float humidity;
     private final Subject weatherData;
 
-    public CurrentConditionDisplay(Subject weatherData){
+    public CurrentConditionDisplay(Subject weatherData) {
         this.weatherData = weatherData;
         weatherData.registObserver(this);
     }

@@ -6,7 +6,7 @@ import com.luojbin.designPattern.p4_factory.pizza.NewYorkPizza;
 import com.luojbin.designPattern.p4_factory.pizza.Pizza;
 
 public class SimplePizzaFactory {
-    public Pizza createPizza(String type){
+    public Pizza createPizza(String type) {
         Pizza pizza = null;
 
         switch (type) {

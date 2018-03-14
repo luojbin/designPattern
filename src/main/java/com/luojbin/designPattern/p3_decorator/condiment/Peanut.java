@@ -5,16 +5,17 @@ import com.luojbin.designPattern.p3_decorator.coffee.Beverage;
 public class Peanut extends Condiment {
     private Beverage beverage;
 
-    public Peanut(Beverage beverage){
+    public Peanut(Beverage beverage) {
         this.beverage = beverage;
     }
 
     @Override
-    public double cost(){
+    public double cost() {
         return 0.001 + beverage.cost();
     }
+
     @Override
     public String getDescription() {
-        return beverage.getDescription()+",peanut";
+        return beverage.getDescription() + ",peanut";
     }
 }

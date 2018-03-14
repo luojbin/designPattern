@@ -15,5 +15,4 @@ public class CGstylePepperPizza extends Pizza2 {
     }
 
 
-
 }
