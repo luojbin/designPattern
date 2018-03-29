@@ -63,12 +63,13 @@ public class Menu extends MenuComponent {
     public void print() {
         System.out.println(getName());
         System.out.println(getDescription());
-        System.out.println("---------------");
+        System.out.println("------begin------");
 
         Iterator iterator = menuComponents.iterator();
         while(iterator.hasNext()){
             MenuComponent menuComponent = (MenuComponent) iterator.next();
             menuComponent.print();
         }
+        System.out.println(".....end.....");
     }
 }
