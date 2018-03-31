@@ -40,7 +40,7 @@ public abstract class MenuComponent2 {
         throw new UnsupportedOperationException();
     }
 
-    public Iterator createIterator(){
+    public Iterator getMenuIterator(){
         throw new UnsupportedOperationException();
     }
 }

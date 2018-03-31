@@ -1,8 +1,6 @@
 package com.luojbin.designPattern.p11_composite2;
 
 
-import com.luojbin.designPattern.p11_composite.MenuComponent;
-
 import java.util.Iterator;
 
 /**
@@ -15,20 +13,28 @@ public class Waitress2 {
         this.allMenus = allMenus;
     }
 
+    // 菜单内部调用了迭代器, 处理了内部逻辑
     public void printMenu(){
         allMenus.print();
     }
 
+    // 外部迭代, 以便外部根据需要操作元素
     public void printVegetarianMenu(){
-        Iterator iterator = allMenus.createIterator();
+
         System.out.println("---------素食菜单----------");
-        while(iterator.hasNext()){
-            MenuComponent2 menuComponent2 = (MenuComponent2) iterator.next();
+        int count = 0;
+        Iterator allMenuIterator = allMenus.getMenuIterator();
+        while(allMenuIterator.hasNext()){
+            count++;
+            MenuComponent2 menuComponent2 = (MenuComponent2) allMenuIterator.next();
+            System.out.println("第"+ count +"次, 得到:"+menuComponent2.getName());
             try{
                 if(menuComponent2.isVegetarian()){
+                    System.out.print("--------> 素菜来了:");
                     menuComponent2.print();
                 }
             }catch (UnsupportedOperationException e){}
+            System.out.println();
         }
     }
 }

@@ -7,10 +7,10 @@ import java.util.Iterator;
  * @create 2018-03-28
  */
 public class MenuItem2 extends MenuComponent2 {
-    String name;
-    String description;
-    boolean vegetarian;
-    double price;
+    private String name;
+    private String description;
+    private boolean vegetarian;
+    private double price;
 
     public MenuItem2(String name, String description, boolean vegetarian, double price) {
         this.name = name;
@@ -59,16 +59,16 @@ public class MenuItem2 extends MenuComponent2 {
     public void print() {
         String s =  "MenuItem2{" +
                 "name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", vegetarian=" + vegetarian +
-                ", price=" + price +
+                // ", description='" + description + '\'' +
+                // ", vegetarian=" + vegetarian +
+                // ", price=" + price +
                 '}';
         System.out.println(s);
     }
 
 
     @Override
-    public Iterator createIterator(){
+    public Iterator getMenuIterator(){
         return new NullIterator();
     }
 }

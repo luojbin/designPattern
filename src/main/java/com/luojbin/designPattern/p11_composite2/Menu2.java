@@ -8,9 +8,10 @@ import java.util.Iterator;
  * @create 2018-03-28
  */
 public class Menu2 extends MenuComponent2 {
-    ArrayList<MenuComponent2> menuComponent2s = new ArrayList();
-    String name;
-    String description;
+    private ArrayList<MenuComponent2> componentList = new ArrayList<>();
+    private String name;
+    private String description;
+    private MenuIterator menuIterator;
 
     public Menu2(String name, String description) {
         this.name = name;
@@ -19,26 +20,26 @@ public class Menu2 extends MenuComponent2 {
 
     @Override
     public void add(MenuComponent2 menuComponent2){
-        menuComponent2s.add(menuComponent2);
+        componentList.add(menuComponent2);
     }
 
     @Override
     public void remove(MenuComponent2 menuComponent2){
-        menuComponent2s.remove(menuComponent2);
+        componentList.remove(menuComponent2);
     }
 
     @Override
     public MenuComponent2 getChild(int i){
-        return menuComponent2s.get(i);
+        return componentList.get(i);
     }
 
 
     public ArrayList<MenuComponent2> getMenuComponent2s() {
-        return menuComponent2s;
+        return componentList;
     }
 
     public void setMenuComponent2s(ArrayList<MenuComponent2> menuComponent2s) {
-        this.menuComponent2s = menuComponent2s;
+        this.componentList = menuComponent2s;
     }
 
     @Override
@@ -65,7 +66,7 @@ public class Menu2 extends MenuComponent2 {
         System.out.println(getDescription());
         System.out.println("------begin------");
 
-        Iterator iterator = menuComponent2s.iterator();
+        Iterator iterator = componentList.iterator();
         while(iterator.hasNext()){
             MenuComponent2 menuComponent2 = (MenuComponent2) iterator.next();
             menuComponent2.print();
@@ -74,7 +75,10 @@ public class Menu2 extends MenuComponent2 {
     }
 
     @Override
-    public Iterator createIterator(){
-        return new CompositeIterator2(menuComponent2s.iterator());
+    public Iterator getMenuIterator(){
+        if (menuIterator == null){
+            menuIterator = new MenuIterator(componentList.iterator(), name);
+        }
+        return menuIterator;
     }
 }
