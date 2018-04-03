@@ -21,6 +21,7 @@ public class CandyMachine {
         noCoinState = new NoCoinState(this);
         hasCoinState = new HasCoinState(this);
         soldState = new SoldState(this);
+        winnerState = new WinnerState(this);
         this.count = candyNumber;
         if (candyNumber > 0) {
             currentState = noCoinState;
