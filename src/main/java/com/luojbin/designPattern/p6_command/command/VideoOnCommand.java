@@ -1,6 +1,5 @@
 package com.luojbin.designPattern.p6_command.command;
 
-import com.luojbin.designPattern.p6_command.equipment.GarageDoor;
 import com.luojbin.designPattern.p6_command.equipment.Video;
 
 /**

@@ -2,8 +2,6 @@ package com.luojbin.designPattern.p6_command.command;
 
 import com.luojbin.designPattern.p6_command.equipment.Light;
 
-import javax.swing.*;
-
 /**
  * @author luojbin
  * @create 2018/3/16 10:29
