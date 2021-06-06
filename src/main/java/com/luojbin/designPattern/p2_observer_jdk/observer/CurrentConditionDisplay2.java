@@ -1,6 +1,6 @@
-package com.luojbin.designPattern.p2_observer_jdk.displayElement;
+package com.luojbin.designPattern.p2_observer_jdk.observer;
 
-import com.luojbin.designPattern.p2_observer_customize.displayElement.DisplayElement;
+import com.luojbin.designPattern.p2_observer_customize.observer.DisplayElement;
 import com.luojbin.designPattern.p2_observer_jdk.subject.WeatherData2;
 
 import java.util.Observable;
@@ -18,11 +18,13 @@ public class CurrentConditionDisplay2 implements DisplayElement, Observer {
     }
 
 
+    @Override
     public void display() {
         System.out.println("CurrentCondition:温度" + temperature + " and 湿度" + humidity);
     }
 
 
+    @Override
     public void update(Observable obs, Object arg) {
         if (obs instanceof WeatherData2) {
             WeatherData2 weatherData2 = (WeatherData2) obs;

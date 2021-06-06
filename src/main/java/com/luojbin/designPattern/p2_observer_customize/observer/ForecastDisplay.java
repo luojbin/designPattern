@@ -1,6 +1,5 @@
-package com.luojbin.designPattern.p2_observer_customize.displayElement;
+package com.luojbin.designPattern.p2_observer_customize.observer;
 
-import com.luojbin.designPattern.p2_observer_customize.observer.Observer;
 import com.luojbin.designPattern.p2_observer_customize.subject.Subject;
 
 public class ForecastDisplay implements DisplayElement, Observer {
@@ -18,7 +17,6 @@ public class ForecastDisplay implements DisplayElement, Observer {
         System.out.println("这里是天气预报，今天是个好日子");
     }
 
-    // LUOJBIN 这是我的todo任务
     @Override
     public void update(float temperature, float humidity, float pressure) {
         this.temperature = temperature;

@@ -1,6 +1,6 @@
-package com.luojbin.designPattern.p2_observer_jdk.displayElement;
+package com.luojbin.designPattern.p2_observer_jdk.observer;
 
-import com.luojbin.designPattern.p2_observer_customize.displayElement.DisplayElement;
+import com.luojbin.designPattern.p2_observer_customize.observer.DisplayElement;
 import com.luojbin.designPattern.p2_observer_jdk.subject.WeatherData2;
 
 import java.util.Observable;

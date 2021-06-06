@@ -1,6 +1,6 @@
-package com.luojbin.designPattern.p2_observer_jdk.displayElement;
+package com.luojbin.designPattern.p2_observer_jdk.observer;
 
-import com.luojbin.designPattern.p2_observer_customize.displayElement.DisplayElement;
+import com.luojbin.designPattern.p2_observer_customize.observer.DisplayElement;
 import com.luojbin.designPattern.p2_observer_jdk.subject.WeatherData2;
 
 import java.util.Observable;
@@ -16,6 +16,7 @@ public class ForecastDisplay2 implements DisplayElement, Observer {
         weatherData.addObserver(this);
     }
 
+    @Override
     public void display() {
         System.out.println("这里是天气预报，今天是个好日子");
     }

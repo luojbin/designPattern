@@ -1,22 +1,20 @@
-package com.luojbin.designPattern.p2_observer_customize.displayElement;
+package com.luojbin.designPattern.p2_observer_customize.observer;
 
-import com.luojbin.designPattern.p2_observer_customize.observer.Observer;
 import com.luojbin.designPattern.p2_observer_customize.subject.Subject;
 
-public class StatisticsDisplay implements DisplayElement, Observer {
+public class CurrentConditionDisplay implements DisplayElement, Observer {
     private float temperature;
     private float humidity;
-    private Subject weatherData;
+    private final Subject weatherData;
 
-    public StatisticsDisplay(Subject weatherData) {
+    public CurrentConditionDisplay(Subject weatherData) {
         this.weatherData = weatherData;
         weatherData.registObserver(this);
     }
 
-
     @Override
     public void display() {
-        System.out.println("这里是天气汇总，我也不知道公式是什么，随便写点吧");
+        System.out.println("CurrentCondition:温度" + temperature + " and 湿度" + humidity);
     }
 
     @Override
